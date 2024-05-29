@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class=" w-full h-full bg-contain"
+style="background-image: url(../img/bgpage.png);">
+    <main class="flex items-center justify-center h-screen">
+        <!-- Columna de las fotos del producto -->
+
+        <div class="h-screen dark:bg-gray-800 justify-center items-center shadow-sm flex-1 flex-col pt-32 pl-10">
+            <div id="default-carousel" class="relative w-11/12 rounded shadow-xl" data-carousel="slide">
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="../img/tfArtboard.jpg" alt="ttf1"
+                            class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="../img/ttf2.png" alt="ttf2"
+                            class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="../img/ttf3.jpg" alt="ttf3"
+                            class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="../img/ttf4.jpg" alt="ttf4"
+                            class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="../img/ttf5.jpg" alt="ttf5"
+                            class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="../img/ttf6.jpg" alt="ttf6"
+                            class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="../img/ttf7.jpg" alt="ttf7"
+                            class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="../img/ttf8.png" alt="ttf8"
+                            class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
+                    </div>
+                </div>
+                <!-- Slider controls -->
+                <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                    <button aria-current="true" aria-label="Slide 1" type="button" class="w-3 h-3 rounded-full"
+                        data-carousel-slide-to="0"></button>
+                    <button aria-current="false" aria-label="Slide 2" type="button" class="w-3 h-3 rounded-full"
+                        data-carousel-slide-to="1"></button>
+                    <button aria-current="false" aria-label="Slide 3" type="button" class="w-3 h-3 rounded-full"
+                        data-carousel-slide-to="2"></button>
+                </div>
+                <button type="button"
+                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blatext-black/30 dark:bg-gray-800/30 group-hover:bg-blatext-black/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-blatext-black dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-800" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blatext-black/30 dark:bg-gray-800/30 group-hover:bg-blatext-black/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-blatext-black dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-800" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+
+        <!-- Columna del título, detalle del producto y botones -->
+        <div class=" flex-1 flex flex-col justify-center items-center p-10">
+            <h1 class="text-black text-4xl font-medium mb-4">THE TIDY FREAK</h1>
+            <p class="text-black mb-8 leading-relaxed">
+                La creación de la marca The Tidy Freak, dedicada a la organización profesional y liderada por dos
+                apasionadas hermanas, fue un proyecto notable. Se enfrentó el gran reto de diferenciarnos en un mercado
+                saturado, donde la mayoría de las competidoras optaban por letras elegantes y delgadas. Nuestra solución
+                fue una tipografía Bold, logrando un diseño limpio y distintivo.
+
+                Las CEOs de The Tidy Freak compartieron su visión de una marca divertida y jovial, pero igualmente
+                refinada. Los colores fueron seleccionados meticulosamente para transmitir paz, tranquilidad y armonía,
+                reflejando no solo los servicios que ofrecen, sino también cómo sus clientes se sienten en sus hogares.
+            </p>
+            <div class="flex space-x-4">
+                <button class="text-black bg-indigo-300 px-6 py-2  hover:bg-indigo-600 focus:outline-none">
+                    <a href="../index.html">Volver</a></button>
+                <button class="text-black bg-indigo-300 px-6 py-2  hover:bg-indigo-600 focus:outline-none"><a
+                        href="./sobremi.html">Sobre mi</a></button>
+                <button class="text-black bg-indigo-500 px-6 py-2  hover:bg-indigo-600 focus:outline-none"><a
+                        href="./contacto.html">Trabaja conmigo</a></button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="">
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+</body>
+
+</html>
