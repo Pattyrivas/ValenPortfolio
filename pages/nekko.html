@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="../output.css" rel="stylesheet">
+    <link href="../src/output.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
         rel="stylesheet">
 </head>
 
-<body class=" w-full h-full bg-contain" style="background-image: url(../img/bgpage.png);">
+<body class=" w-full h-full bg-contain" style="background-image: url(../src/img/bgpage.png);">
     <main class="flex items-center justify-center h-screen">
         <!-- Columna de las fotos del producto -->
 
@@ -22,35 +22,35 @@
             <div id="default-carousel" class="relative w-11/12 rounded shadow-xl" data-carousel="slide">
                 <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/tfArtboard.jpg" alt="ttf1"
+                        <img src="../src/img/nekkoArtboard.png" alt="nekko1"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/ttf2.png" alt="ttf2"
+                        <img src="../src/img/nekko2.png" alt="nekko2"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/ttf3.jpg" alt="ttf3"
+                        <img src="../src/img/nekko3.jpg" alt="nekko3"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/ttf4.jpg" alt="ttf4"
+                        <img src="../src/img/nekko4.png" alt="nekko4"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/ttf5.jpg" alt="ttf5"
+                        <img src="../src/img/nekko5.jpg" alt="nekko5"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/ttf6.jpg" alt="ttf6"
+                        <img src="../src/img/nekko6.jpg" alt="nekko6"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/ttf7.jpg" alt="ttf7"
+                        <img src="../src/img/nekko7.jpg" alt="nekko7"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/ttf8.png" alt="ttf8"
+                        <img src="../src/img/nekko8.png" alt="nekko8"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                 </div>
@@ -67,7 +67,7 @@
                     class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                     data-carousel-prev>
                     <span
-                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blatext-black/30 dark:bg-gray-800/30 group-hover:bg-blatext-black/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-blatext-black dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                         <svg class="w-4 h-4 text-gray-500 dark:text-gray-800" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -79,7 +79,7 @@
                     class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                     data-carousel-next>
                     <span
-                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blatext-black/30 dark:bg-gray-800/30 group-hover:bg-blatext-black/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-blatext-black dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                         <svg class="w-4 h-4 text-gray-500 dark:text-gray-800" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -90,24 +90,20 @@
             </div>
         </div>
 
-
         <!-- Columna del título, detalle del producto y botones -->
-        <div class=" flex-1 flex flex-col justify-center items-center p-10">
-            <h1 class="text-black text-4xl font-medium mb-4">BEAGLE INK</h1>
-            <p class="text-black mb-8 leading-relaxed">
-                The creation of the Beagle Ink brand was an incredibly rewarding experience. Working with a talented
-                Venezuelan tattoo artist to bring his brand to life was an honor. The inspiration behind the name,
-                Beagle Ink, is deeply personal; it reflects the artist's connection with his two small beagles, who have
-                been his faithful companions throughout his artistic journey.
+        <div class="flex-1 flex flex-col justify-center items-center p-10">
+            <h1 class="text-white text-4xl font-medium mb-4">NEKKO</h1>
+            <p class="text-white mb-8 leading-relaxed">
+                Working on the creation of the Nekko Sushi brand was a fascinating and creativity-filled experience.
+                This project was born from the passion of a chef inspired by Japanese cuisine, who decided to bring his
+                dream to life with a small restaurant in the suburbs of Atlanta. The name 'Nekko,' which means root in
+                Japanese, was chosen with deep significance: it represents the chef's connection to his passion from a
+                young age. The word 'Nekko' in Japanese was harmoniously integrated into the logo, adding an authentic
+                and personal touch.
                 <br />
-                The challenge was to create a brand that stood out in a market saturated with gothic styles and script
-                fonts. The client wanted Beagle Ink to be different, to convey fun but also passion and professionalism.
-                We opted for a bold typography to add impact and readability, while the brand colors were inspired by
-                the tones of the client's dogs, adding a personal and distinctive touch.
-                <br />
-                The end result was a brand that perfectly captured the client's essence and stood out among the
-                competition. I am proud of the work we did together to create a unique visual identity that reflects the
-                passion and artistry behind Beagle Ink.
+                The client's vision was clear: an innovative, elegant, and fun brand that could bring all his culinary
+                ideas to life. Every element of the design, from the color palette to the typography, was selected to
+                reflect the vibrant and creative identity of Nekko Sushi.
             </p>
             <div class="flex space-x-0 bg-indigo-500 rounded p-2">
                 <button
@@ -116,14 +112,14 @@
                 </button>
                 <button
                     class="text-white bg-indigo-500 px-6 py-2 hover:bg-indigo-600 focus:outline-none border-r border-indigo-700 last:border-r-0">
-                    <a href="./services.html">Services</a>
+                    <a href="../pages/services.html">Services</a>
                 </button>
                 <button
                     class="text-white bg-indigo-500 px-6 py-2 hover:bg-indigo-600 focus:outline-none border-r border-indigo-700 last:border-r-0">
-                    <a href="./sobremi.html">About me</a>
+                    <a href="../pages/sobremi.html">About me</a>
                 </button>
                 <button class="text-white bg-indigo-500 px-6 py-2 hover:bg-indigo-600 focus:outline-none">
-                    <a href="./contacto.html">Let's work together</a>
+                    <a href="../pages/contacto.html">Let's work together</a>
                 </button>
             </div>
         </div>

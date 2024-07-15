@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="../output.css" rel="stylesheet">
+    <link href="../src/output.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
         rel="stylesheet">
 </head>
 
-<body class=" w-full h-full bg-contain" style="background-image: url(../img/bgpage.png);">
+<body class=" w-full h-full bg-contain" style="background-image: url(../src/img/bgpage.png);">
     <main class="flex items-center justify-center h-screen">
         <!-- Columna de las fotos del producto -->
 
@@ -22,35 +22,31 @@
             <div id="default-carousel" class="relative w-11/12 rounded shadow-xl" data-carousel="slide">
                 <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/tfArtboard.jpg" alt="ttf1"
+                        <img src="../src/img/goodGArtboard.png" alt="goodG1"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/ttf2.png" alt="ttf2"
+                        <img src="../src/img/goodG2.jpg" alt="goodG2"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/ttf3.jpg" alt="ttf3"
+                        <img src="../src/img/goodG3.png" alt="goodG3"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/ttf4.jpg" alt="ttf4"
+                        <img src="../src/img/goodG4.jpg" alt="goodG4"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/ttf5.jpg" alt="ttf5"
+                        <img src="../src/img/goodG5.jpg" alt="goodG5"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/ttf6.jpg" alt="ttf6"
+                        <img src="../src/img/goodG6.jpg" alt="goodG6"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/ttf7.jpg" alt="ttf7"
-                            class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
-                    </div>
-                    <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/ttf8.png" alt="ttf8"
+                        <img src="../src/img/goodG7.jpg" alt="goodG7"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                 </div>
@@ -67,7 +63,7 @@
                     class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                     data-carousel-prev>
                     <span
-                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blatext-black/30 dark:bg-gray-800/30 group-hover:bg-blatext-black/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-blatext-black dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                         <svg class="w-4 h-4 text-gray-500 dark:text-gray-800" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -79,7 +75,7 @@
                     class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                     data-carousel-next>
                     <span
-                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-blatext-black/30 dark:bg-gray-800/30 group-hover:bg-blatext-black/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-blatext-black dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                         <svg class="w-4 h-4 text-gray-500 dark:text-gray-800" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -92,17 +88,18 @@
 
 
         <!-- Columna del título, detalle del producto y botones -->
-        <div class=" flex-1 flex flex-col justify-center items-center p-10">
-            <h1 class="text-black text-4xl font-medium mb-4">THE TIDY FREAK</h1>
-            <p class="text-black mb-8 leading-relaxed">
-                The creation of the brand The Tidy Freak, dedicated to professional organization and led by two
-                passionate sisters, was a remarkable project. We faced the significant challenge of differentiating
-                ourselves in a saturated market where most competitors opted for elegant and thin lettering. Our
-                solution was a Bold typography, achieving a clean and distinctive design.
+        <div class="flex-1 flex flex-col justify-center items-center p-10">
+            <h1 class="text-white text-4xl font-medium mb-4">GOOD GADGETS </h1>
+            <p class="text-white mb-8 leading-relaxed">
+                Working on the development of the Good Gadgets brand was a privilege. This brand, conceived for two
+                partners in a market with little competition, specializes in innovative smart home design and TV
+                mounting.
                 <br />
-                The CEOs of The Tidy Freak shared their vision of a fun and jovial yet refined brand. The colors were
-                meticulously selected to convey peace, tranquility, and harmony, reflecting not only the services they
-                offer but also how their clients feel in their homes.
+                The entrepreneurs sought a technological, modern, and elegant identity. This project became a creative
+                journey where the typography and colors, mint green and purple, were carefully selected to reflect the
+                dynamism of the tech world. Through a meticulous process, every design choice aimed to capture the
+                essence of Good Gadgets, offering services that exceed expectations in smart home design and TV
+                installation.
             </p>
             <div class="flex space-x-0 bg-indigo-500 rounded p-2">
                 <button
@@ -111,17 +108,17 @@
                 </button>
                 <button
                     class="text-white bg-indigo-500 px-6 py-2 hover:bg-indigo-600 focus:outline-none border-r border-indigo-700 last:border-r-0">
-                    <a href="./services.html">Services</a>
+                    <a href="../pages/services.html">Services</a>
                 </button>
                 <button
                     class="text-white bg-indigo-500 px-6 py-2 hover:bg-indigo-600 focus:outline-none border-r border-indigo-700 last:border-r-0">
-                    <a href="./sobremi.html">About me</a>
+                    <a href="../pages/sobremi.html">About me</a>
                 </button>
                 <button class="text-white bg-indigo-500 px-6 py-2 hover:bg-indigo-600 focus:outline-none">
-                    <a href="./contacto.html">Let's work together</a>
+                    <a href="../pages/contacto.html">Let's work together</a>
                 </button>
             </div>
-        </div>
+
     </main>
 
     <footer class="">

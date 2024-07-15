@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="../output.css" rel="stylesheet">
+    <link href="../src/output.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
         rel="stylesheet">
 </head>
 
-<body class=" w-full h-full bg-contain" style="background-image: url(../img/bgpage.png);">
+<body class=" w-full h-full bg-contain" style="background-image: url(../src/img/bgpage.png);">
     <main class="flex items-center justify-center h-screen">
         <!-- Columna de las fotos del producto -->
 
@@ -22,27 +22,31 @@
             <div id="default-carousel" class="relative w-11/12 rounded shadow-xl" data-carousel="slide">
                 <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/astraArtboard.jpg" alt="astra1"
+                        <img src="../src/img/soulArtboard.png" alt="soul1"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/astra2.jpg" alt="astra2"
+                        <img src="../src/img/soul2.png" alt="soul2"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/astra3.jpg" alt="astra3"
+                        <img src="../src/img/soul3.png" alt="soul3"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/astra4.jpg" alt="astra4"
+                        <img src="../src/img/soul4.jpg" alt="soul4"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/astra5.jpg" alt="astra5"
+                        <img src="../src/img/soul5.jpg" alt="soul5"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                     <div class="duration-700 ease-in-out" data-carousel-item>
-                        <img src="../img/astra6.jpg" alt="astra6"
+                        <img src="../src/img/soul6.jpg" alt="soul6"
+                            class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
+                    </div>
+                    <div class="duration-700 ease-in-out" data-carousel-item>
+                        <img src="../src/img/soul7.jpg" alt="soul7"
                             class="absolute block w-full h-full object-cover top-0 left-0 shadow" />
                     </div>
                 </div>
@@ -85,17 +89,18 @@
 
         <!-- Columna del título, detalle del producto y botones -->
         <div class="flex-1 flex flex-col justify-center items-center p-10">
-            <h1 class="text-white text-4xl font-medium mb-4">ASTRA CREATIONS</h1>
+            <h1 class="text-white text-4xl font-medium mb-4">SOUL COFFEE HOUSE
+            </h1>
             <p class="text-white mb-8 leading-relaxed">
-                Astra Creations, an extraordinary brand I had the privilege to design, is the visual representation of
-                our client's passion and love for art. It is a store specializing in crafts and personalized items. The
-                client wanted to convey fun and magic. Her request to incorporate the color purple was a great choice,
-                as this shade not only symbolizes creativity but also serves as the perfect canvas for each unique
-                creation.
-                </br>
-                The typography, carefully selected and customized with wave-shaped curves, becomes the distinctive
-                signature of Astra. Each stroke tells the story of the brand, carrying the essence of movement and
-                creativity.
+                I thoroughly enjoyed working on the rebranding of Soul Coffee House. Located in Ecuador, the brand is
+                embarking on a new phase that reflects the client's current vision and evolution. Initially focused on
+                specialty coffee, the new identity of Soul expands to embrace its true essence: a space for personal
+                growth. Soul Coffee House is not just a place for specialty coffee; it is a corner where the CEO's
+                vision and effort translate into a space of female empowerment.
+                <br />
+                The redesign, marked by the colors white and black to convey confidence and seriousness, incorporates
+                pink to add a feminine touch. Distinctive coffee elements were included to add personality to the brand.
+                The carefully chosen Bold typography adds an element of strength and clarity to the brand.
             </p>
             <div class="flex space-x-0 bg-indigo-500 rounded p-2">
                 <button
@@ -104,14 +109,14 @@
                 </button>
                 <button
                     class="text-white bg-indigo-500 px-6 py-2 hover:bg-indigo-600 focus:outline-none border-r border-indigo-700 last:border-r-0">
-                    <a href="./services.html">Services</a>
+                    <a href="../pages/services.html">Services</a>
                 </button>
                 <button
                     class="text-white bg-indigo-500 px-6 py-2 hover:bg-indigo-600 focus:outline-none border-r border-indigo-700 last:border-r-0">
-                    <a href="./sobremi.html">About me</a>
+                    <a href="../pages/sobremi.html">About me</a>
                 </button>
                 <button class="text-white bg-indigo-500 px-6 py-2 hover:bg-indigo-600 focus:outline-none">
-                    <a href="./contacto.html">Let's work together</a>
+                    <a href="../pages/contacto.html">Let's work together</a>
                 </button>
             </div>
         </div>
